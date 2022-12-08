@@ -31,3 +31,6 @@ for (let j = 0; j < key_dict.length; j++) {
     answer += dict[key_dict[j]];
 }
 ```
+
+## Thursday 8 December 2022 
+-   12.00 start doing "count duplicate" by use es6.
