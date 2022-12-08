@@ -9,4 +9,4 @@ const input_loop = () => {
     return arrays
 }
 
-module.exports = input_loop
+module.exports = input_loop;
