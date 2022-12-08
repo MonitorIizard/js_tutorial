@@ -34,3 +34,4 @@ for (let j = 0; j < key_dict.length; j++) {
 
 ## Thursday 8 December 2022 
 -   12.00 start doing "count duplicate" by use es6.
+-   13.02 finish I use forEach to create object that count the duplicate number of each element and sum all value by method ```Object.values(object)```
