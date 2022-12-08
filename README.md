@@ -35,3 +35,40 @@ for (let j = 0; j < key_dict.length; j++) {
 ## Thursday 8 December 2022 
 -   12.00 start doing "count duplicate" by use es6.
 -   13.02 finish I use forEach to create object that count the duplicate number of each element and sum all value by method ```Object.values(object)```
+
+-   13.09 start "deleted duplicate" by loop
+-   13.26 finish, first I use 2 loop first loop call "main" second loop is "secondary"
+, in second loop it have condition ```if (element[main] == element[second] but index of main not equal to secondary) then make that element undefinded```
+
+after that we loop again but this loop we append the value that is not undefinded to new answer list.
+
+-   13.39 start "deleted duplicate" by es6
+-   13.51 finish "deleted duplicate" by es6
+``` js
+unique = arrays.filter(function(e,i) {
+    return arrays.indexOf(e) == i;
+});
+```
+this is the main point I use filter with indexOf to find check because indexOf will return first index of satisfied element but if that return != current index that mean it not the first element 
+
+for instance 
+``` js
+[0, 0, 2, 3, 4] 
+
+unique = arrays.filter(function(e,i) {
+    return arrays.indexOf(e) == i;
+});
+```
+
+
+first round 
+e, i = 0
+arrays.indexOf(e) will return 0 
+and 0 = i(0) which is true
+
+second round
+e = 0 , i = 1
+arrays.indexOf(e) will return 0 
+but 0 != i(1) which is false and won't append
+
+I think you might get an idea.
